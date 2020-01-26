@@ -1,24 +1,20 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
 }
-
 li {
   list-style: none;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 .header {
   background-image: linear-gradient(
       90deg,
-      rgba(213, 32, 71, 0.8) 0%,
+      rgba(213, 32, 71, 0.8) 0,
       rgba(238, 61, 27, 0.8) 100%
     ),
     url(../img/header-bg.png);
@@ -26,32 +22,27 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: #fff;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
 .header__top {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   flex: 2;
 }
-
 .logo a {
   display: flex;
   align-items: center;
   width: max-content;
 }
-
 .logo__icon {
   padding-right: 5px;
 }
@@ -72,31 +63,25 @@ a {
   align-items: center;
   padding: 0;
 }
-
 .menu__item {
   display: inline-block;
 }
-
 .menu__item a {
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
 }
-
 .menu__item a:hover {
   text-decoration-line: underline;
   -moz-text-decoration-line: underline;
 }
-
 .menu__item + li {
   padding-left: 22px;
 }
-
 .menu__control {
   display: flex;
   align-items: center;
 }
-
 .menu__select {
   position: relative;
   display: flex;
@@ -109,21 +94,20 @@ a {
 .menu__select-lang {
   padding: 0 5px;
   width: 60px;
-  background: none;
-  color: #ffffff;
+  background: 0 0;
+  color: #fff;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-
 .menu__login {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 40px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   box-sizing: border-box;
   border-radius: 6px;
   font-size: 14px;
@@ -131,13 +115,11 @@ a {
   text-transform: uppercase;
   transition: 0.5s;
 }
-
 .menu__login:hover {
-  background: #ffffff;
+  background: #fff;
   color: #ed4c5c;
   transition: 0.5s;
 }
-
 .header__subject {
   display: flex;
   flex-direction: column;
@@ -154,19 +136,19 @@ a {
   margin: 0;
 }
 .header__subject-desc {
-  padding: 39px 0 46px 0;
+  padding: 39px 0 46px;
   max-width: 480px;
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
-  color: #ffffff;
+  color: #fff;
   margin: 0 auto;
 }
 .header__subject-btn {
   padding: 14px 50px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 6px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -176,86 +158,72 @@ a {
   transition: 0.5s;
   margin: 0 auto;
 }
-
 .header__subject-btn:hover {
-  background: transparent;
-  color: #ffffff;
+  background: 0 0;
+  color: #fff;
   transition: 0.5s;
 }
-
 .video {
   padding: 95px 0;
 }
-
 .video__wrap {
   display: flex;
   justify-content: space-between;
 }
-
 .video__subject {
-  color: #000000;
+  color: #000;
   max-width: 445px;
 }
-
 .subject--left {
   padding-right: 20px;
 }
-
 .video__subject-title {
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
 }
-
 .text {
   text-align: justify;
   font-size: 14px;
   line-height: 140%;
 }
-
 .video__subject-text {
-  padding: 54px 0 25px 0;
-  color: #000000;
+  padding: 54px 0 25px;
+  color: #000;
 }
 .link {
   font-size: 14px;
   line-height: 140%;
   color: #ed4c5c;
 }
-
 .video__play {
   max-width: 478px;
   height: auto;
   display: flex;
   align-items: center;
 }
-
 .video__play img {
   max-width: 100%;
   height: auto;
 }
-
 .features {
   background: #fafafa;
-  color: #000000;
+  color: #000;
 }
 .features__title {
   text-align: center;
   padding: 65px 0;
 }
-
 .title {
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
   margin: 0;
 }
-
 .features__cards {
   display: flex;
   justify-content: space-between;
 }
-
 .features__card {
   position: relative;
   margin-bottom: 200px;
@@ -263,7 +231,6 @@ a {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .features__card a {
   display: flex;
   justify-content: center;
@@ -271,21 +238,20 @@ a {
   height: auto;
   position: absolute;
   top: 60%;
+  transition: 0.7s;
 }
 .features__card a:hover {
   top: 40%;
   transition: 0.7s;
 }
-
 .features__card img {
   max-width: 100%;
   height: auto;
 }
-
 .features__card-desc {
   max-width: 85%;
-  background: #ffffff;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   z-index: 4;
   padding: 30px 20px;
@@ -293,9 +259,8 @@ a {
   cursor: pointer;
   transition: 0.7s;
 }
-
 .features__card-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
@@ -304,16 +269,13 @@ a {
   line-height: 150%;
   padding: 20px 0 30px;
 }
-
 .technology {
   padding: 70px 0;
 }
-
 .technology__title {
   text-align: center;
   padding-bottom: 70px;
 }
-
 .technology__cards {
   display: flex;
   flex-wrap: wrap;
@@ -334,12 +296,10 @@ a {
   padding-bottom: 25px;
   transition: 0.5s;
 }
-
 .technology__card:hover .technology__card-number {
   font-size: 130px;
   transition: 0.5s;
 }
-
 .technology__card-img {
   position: absolute;
   top: 90px;
@@ -355,7 +315,6 @@ a {
   font-size: 14px;
   line-height: 14px;
 }
-
 .download {
   background: #ed4c5c;
   color: #fafafa;
@@ -365,12 +324,10 @@ a {
   justify-content: space-between;
   padding: 95px 0;
 }
-
 .download-subject {
   padding-top: 25px;
   max-width: 445px;
 }
-
 .download-subject__text {
   padding-top: 50px;
 }
@@ -390,78 +347,64 @@ a {
   display: flex;
   align-items: center;
 }
-
 .download-slider__item img {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
 }
-
 .contact__wrap {
-  padding: 117px 0 78px 0;
+  padding: 117px 0 78px;
   display: flex;
   justify-content: space-between;
 }
 .contact-subject {
   max-width: 445px;
 }
-
 .contact-subject__text {
   padding-top: 60px;
 }
-
 .contact-form {
   max-width: 540px;
 }
-
 .contact-form input,
 .contact-form select {
   height: 60px;
-  border: 1px solid #333333;
+  border: 1px solid #333;
   box-sizing: border-box;
   border-radius: 6px;
   margin-bottom: 24px;
-}
-
-.contact-form input,
-.contact-form select {
   width: 100%;
-  padding: 20px 20px;
-  outline: none;
+  padding: 20px;
+  outline: 0;
 }
-
 .contact-form input[name="firstname"],
 .contact-form input[name="lastname"] {
   width: 48%;
 }
-
 .contact-form input::placeholder,
 .contact-form select#service {
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
-  background: transparent;
+  background: 0 0;
 }
-
 .contact-form input[name="lastname"] {
   float: right;
 }
-
 .contact-form input[type="submit"] {
   background: #ed4c5c;
   border: 1.5px solid #ed4c5c;
   box-sizing: border-box;
   border-radius: 6px;
   font-size: 14px;
-  line-height: 0;
+  line-height: 17px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   padding: 17px 34px;
   cursor: pointer;
   width: auto;
   margin-bottom: 0;
 }
-
 .footer {
   background: #fafafa;
   color: #101010;
@@ -476,20 +419,17 @@ a {
   padding: 10px 20px;
   width: 25%;
 }
-
 .footer-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: #101010;
   padding-bottom: 33px;
 }
-
 .footer-text {
   font-size: 14px;
   line-height: 150%;
 }
-
 .footer__services-nav {
   padding: 0;
   margin: 0;
@@ -501,7 +441,6 @@ a {
 .footer__contact div + div {
   padding-bottom: 15px;
 }
-
 .footer__contact-icons {
   width: 66px;
   display: flex;
@@ -510,14 +449,50 @@ a {
 .footer__support-icons img {
   width: 100%;
 }
-
 .footer__copyring {
   padding-top: 86px;
   text-align: center;
 }
-
 @media screen and (max-width: 1023px) {
   .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    color: #ed4c5c;
+    font-weight: 700;
+    overflow: hidden;
+  }
+  .menu__login {
+    border: 1px solid #ed4c5c;
+  }
+  .open {
+    overflow: hidden;
+  }
+  .open .menu {
+    transform: translateX(0);
+  }
+  .menu__list {
+    flex-direction: column;
+  }
+  .menu__item + li {
+    padding-left: 0;
+  }
+  .menu__item {
+    padding: 5.5vh 0;
+  }
+  .menu__control {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu__select {
     display: none;
   }
   .menu__btn {
@@ -548,6 +523,34 @@ a {
     bottom: 0;
     width: 70%;
   }
+  .open .menu__btn {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .open .menu__btn span {
+    display: none;
+  }
+  .open .menu__btn::after,
+  .open .menu__btn::before {
+    content: " ";
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+  }
+  .open .menu__btn::after {
+    top: 9px;
+    bottom: 0;
+    width: 100%;
+    transform: rotate(45deg);
+  }
+  .open .menu__btn::before {
+    top: 9px;
+    bottom: 0;
+    width: 100%;
+    transform: rotate(-45deg);
+  }
   .features__cards {
     display: flex;
     justify-content: center;
@@ -557,7 +560,6 @@ a {
     margin-bottom: 170px;
   }
 }
-
 @media screen and (max-width: 768px) {
   section.video {
     padding: 70px 0;
@@ -567,7 +569,7 @@ a {
     flex-direction: column;
   }
   .video__subject.subject--left {
-    padding: 0 0 20px 0;
+    padding: 0 0 20px;
   }
   .video__subject-title {
     text-align: center;
@@ -576,10 +578,10 @@ a {
     padding: 25px 0;
   }
   section.features {
-    padding: 70px 0 30px 0;
+    padding: 70px 0 30px;
   }
   h3.features__title.title {
-    padding: 0px 0 70px;
+    padding: 0 0 70px;
   }
   .download__wrap {
     flex-direction: column-reverse;
@@ -606,7 +608,6 @@ a {
   .contact {
     padding: 70px 0;
   }
-
   .contact__wrap {
     padding: 0;
     display: flex;
@@ -614,7 +615,6 @@ a {
     justify-content: space-between;
     align-items: center;
   }
-
   .contact-subject__title.title {
     text-align: center;
   }
@@ -649,7 +649,6 @@ a {
     padding-top: 40px;
   }
 }
-
 @media screen and (max-width: 500px) {
   section.video {
     padding: 35px 0;
@@ -661,7 +660,7 @@ a {
     padding: 35px 0 30px;
   }
   h3.features__title.title {
-    padding: 0px 0 35px;
+    padding: 0 0 35px;
   }
   .features__card a {
     top: 50%;
@@ -688,7 +687,7 @@ a {
     padding: 35px 0;
   }
   select#service {
-    padding: 0px 20px;
+    padding: 0 20px;
   }
   .contact-form input,
   .contact-form select {
@@ -696,7 +695,6 @@ a {
     margin-bottom: 15px;
   }
 }
-
 @media screen and (max-width: 375px) {
   .footer__wrap > div {
     width: 100%;
