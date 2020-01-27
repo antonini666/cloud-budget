@@ -397,7 +397,7 @@ a {
   box-sizing: border-box;
   border-radius: 6px;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 0;
   text-transform: uppercase;
   color: #fff;
   padding: 17px 34px;
